@@ -81,7 +81,8 @@ body {
 }
 
 main, section {
-  flex: 1;
+  /*flex: 1;*/
+  width: fit-content;
   max-width: 900px;
   margin: 40px auto;
   background-color: #fff;
@@ -89,9 +90,6 @@ main, section {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.15);
   border: 3px solid #e0e0e0;
-  justify-content: flex-end;
-  height: 100vh;
-  flex-direction: column; 
 }
 
 /* ==============================
@@ -291,16 +289,6 @@ a.boton-enlace:hover {
   margin: 4px 0;
 }
 
-/* =====================================
-   PERFIL DE USUARIO
-   ===================================== */
-
-.profile-logout {
-  display: flex;
-  flex-direction: column; /* organiza en columna */
-  justify-content: flex-end; /* empuja el contenido hacia abajo */
-  height: 70%; 
-}
 
 /* =====================================
    NOMBRE USUARIO EN HEADER

@@ -15,5 +15,22 @@
         "fotos": [
             "..\/..\/uploads\/photos\/1763047607_Captura de pantalla 2025-11-06 191259.png"
         ]
+    },
+    {
+        "nombre": "Moncayo",
+        "dificultad": "moderada",
+        "distancia": "15",
+        "desnivel": "1000",
+        "duracion": "3",
+        "provincia": "Madrid",
+        "epocas": [
+            "oto\u00f1o"
+        ],
+        "descripcion": "Ruta muy bonita",
+        "nivel_tecnico": "1",
+        "nivel_fisico": "2",
+        "fotos": [
+            "..\/..\/uploads\/photos\/1763058545_MauriceITPN_Screenshot_20250315_195739.png"
+        ]
     }
 ]

@@ -142,69 +142,18 @@ Inicio de Sesión
 ![Iniciar Sesion](README/iniciar-sesion.png)
 
 Perfil de usuario
+![Perfil](README/perfil.png)
 
-CRUD de rutas
+Crear rutas
+![Crear Ruta](README/crear-ruta.png)
+
+Ver rutas
+![Lista de Rutas](README/lista-rutas.png)
 
 
-(Sustituye los enlaces con tus capturas reales antes de subir a GitHub)
-
-🚀 Subir Proyecto a GitHub
-Inicializa Git en tu proyecto:
-
-bash
-Copiar código
-git init
-git remote add origin https://github.com/dav516/mountain-connect.git
-Crear .gitignore para ignorar archivos innecesarios:
-
-bash
-Copiar código
-/vendor/
-/node_modules/
-*.log
-*.env
-/uploads/
-Agrega y haz commit:
-
-bash
-Copiar código
-git add .
-git commit -m "Primer commit: estructura inicial del proyecto MountainConnect"
-Subir al repositorio remoto:
-
-bash
-Copiar código
-git branch -M main
-git push -u origin main
-⚠️ Si aparece el warning LF will be replaced by CRLF, configura Git:
-
-bash
-Copiar código
-git config --global core.autocrlf true
-📝 Criterios de Evaluación
-Correcta organización de carpetas y archivos
-
-Formularios funcionales con validación
-
-Gestión de sesiones (login/logout)
-
-Subida de archivos validada
-
-Código limpio y reutilizable
-
-Mensajes claros y experiencia de usuario adecuada
-
-🤝 Autor
+## 🤝 Autor
 David Ultra Rey – dav516
 
-📜 Licencia
+## 📜 Licencia
 Este proyecto es para fines educativos. No tiene licencia comercial.
 
-yaml
-Copiar código
-
----
-
-Si quieres, puedo también prepararte un **.gitignore definitivo adaptado a MountainConnect** listo para copiar y pegar, para que no subas fotos ni archivos sensibles a GitHub. Esto dejaría tu repositorio completamente limpio.  
-
-¿Quieres que haga eso también?

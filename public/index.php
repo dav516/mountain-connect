@@ -9,6 +9,8 @@ include("../includes/header.php");
 
     <?php if (isset($_SESSION["usuario"])): ?>
         <p>Hola, <strong><?php echo htmlspecialchars($_SESSION["usuario"]["username"]); ?></strong> 👋</p>
+        <p>Enhorabuena ahora puedes ver las <a href="/mountain-connect/public/routes/list.php">rutas</a> de los compañeros <br>También puedes <a href="/mountain-connect/public/routes/create.php">crear</a> las tuyas propias</p>
+        <br>
         <p>Puedes ir a tu <a href="/mountain-connect/public/profile.php">perfil</a> o <a href="/mountain-connect/public/logout.php">cerrar sesión</a>.</p>
     <?php else: ?>
         <p>Bienvenido visitante 👋</p>
