@@ -1,0 +1,308 @@
+/* ==============================
+   MOUNTAINCONNECT - ESTILOS GLOBALES ACTUALIZADOS
+   ============================== */
+
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==============================
+   HEADER FIJO Y NAVEGACIÓN
+   ============================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2f2f2f; /* gris oscuro */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+footer {
+  background-color: #2f2f2f; /* gris oscuro uniforme */
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+
+/* ==============================
+   ESPACIADO DEL CONTENIDO
+   ============================== */
+body {
+  padding-top: 140px; /* espacio para header fijo */
+  flex: 1;
+}
+
+main, section {
+  flex: 1;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  border: 3px solid #e0e0e0;
+  justify-content: flex-end;
+  height: 100vh;
+  flex-direction: column; 
+}
+
+/* ==============================
+   TITULOS Y TEXTO
+   ============================== */
+h1, h2, h3, h4 {
+  color: #555; /* gris medio para títulos */
+  margin-bottom: 20px;
+}
+
+p, li, label, input, select {
+  color: #000; /* texto negro */
+  font-size: 1rem;
+}
+
+/* ==============================
+   FORMULARIOS
+   ============================== */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+form input[type="submit"],
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+button:hover {
+  background-color: #555;
+}
+
+/* ==============================
+   MENSAJES DE ERROR / ÉXITO
+   ============================== */
+.error {
+  background-color: #f8d7da;
+  color: #842029;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* ==============================
+   TARJETAS Y LISTADOS
+   ============================== */
+.card {
+  background: #fff;
+  border: 2px solid #ddd;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+
+#form-registro, #form-login, #form-ruta {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contenido-principal {
+  text-align: left;
+}
+
+
+#main-header {
+  border-bottom: 4px solid #444;
+}
+
+/* =====================================
+   ENLACES (<a href>) - ESTILO GLOBAL
+   ===================================== */
+
+a {
+  color: #333; /* gris oscuro */
+  text-decoration: none; /* sin subrayado */
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+/* Efecto hover: color más oscuro y subrayado gris */
+a:hover {
+  color: #000; /* negro */
+  border-bottom: 2px solid #666; /* línea gris */
+}
+
+/* Enlaces dentro del header */
+header a {
+  color: #ddd;
+  font-weight: 600;
+  margin: 0 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+header a:hover {
+  background-color: #444;
+  color: #fff;
+  border-bottom: none;
+}
+
+/* Enlaces dentro del footer */
+footer a {
+  color: #ccc;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Enlaces tipo botón (por ejemplo, "Ver rutas") */
+a.boton-enlace {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff !important;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+a.boton-enlace:hover {
+  background-color: #555;
+}
+
+/* =====================================
+   TARJETAS DE RUTAS (list.php)
+   ===================================== */
+.card-ruta {
+  border: 1px solid #ccc;           /* mismo tono gris que usabas */
+  border-radius: 10px;              /* esquinas redondeadas */
+  padding: 15px 20px;               /* espacio interno */
+  margin: 15px 0;                   /* separación entre tarjetas */
+  background-color: #fff;           /* fondo blanco limpio */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* sombra sutil */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el ratón */
+.card-ruta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Título dentro de la tarjeta */
+.card-ruta h3 {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* Texto dentro de la tarjeta */
+.card-ruta p {
+  color: #222;
+  margin: 4px 0;
+}
+
+/* =====================================
+   PERFIL DE USUARIO
+   ===================================== */
+
+.profile-logout {
+  display: flex;
+  flex-direction: column; /* organiza en columna */
+  justify-content: flex-end; /* empuja el contenido hacia abajo */
+  height: 70%; 
+}
+
+#nombre-header {
+  color: white;
+  font-weight: 500;
+}

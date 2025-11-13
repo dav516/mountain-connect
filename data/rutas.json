@@ -1,0 +1,19 @@
+[
+    {
+        "nombre": "Alpes",
+        "dificultad": "f\u00e1cil",
+        "distancia": "10",
+        "desnivel": "500",
+        "duracion": "2",
+        "provincia": "Madrid",
+        "epocas": [
+            "verano"
+        ],
+        "descripcion": "aaa",
+        "nivel_tecnico": "1",
+        "nivel_fisico": "2",
+        "fotos": [
+            "..\/..\/uploads\/photos\/1763047607_Captura de pantalla 2025-11-06 191259.png"
+        ]
+    }
+]
