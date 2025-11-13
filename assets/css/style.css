@@ -302,6 +302,10 @@ a.boton-enlace:hover {
   height: 70%; 
 }
 
+/* =====================================
+   NOMBRE USUARIO EN HEADER
+   ===================================== */
+
 #nombre-header {
   color: white;
   font-weight: 500;
