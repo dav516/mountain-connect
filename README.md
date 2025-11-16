@@ -141,8 +141,17 @@ Registro de usuario
 Inicio de Sesión
 ![Iniciar Sesion](README/iniciar-sesion.png)
 
+Página Principal Sesión Iniciada
+![Página Principal Sesión Iniciada](README/pagina-principal-sesion-iniciada.png)
+
 Perfil de usuario
 ![Perfil](README/perfil.png)
+
+Editar perfil
+![Perfil](README/editar-perfil.png)
+
+Mis Actividades
+![Perfil](README/mis-actividades.png)
 
 Crear rutas
 ![Crear Ruta](README/crear-ruta.png)

@@ -13,11 +13,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $usuario_encontrado = null;
     foreach ($usuarios as $u) {
-        if (($u["username"] === $login || $u["email"] === $login) && $u["password"] === $password) {
+    // Comprobar usuario o email
+    if ($u["username"] === $login || $u["email"] === $login) {
+        
+        // Comprobar contraseña cifrada
+        if (password_verify($password, $u["password"])) {
             $usuario_encontrado = $u;
             break;
         }
     }
+}
 
     if ($usuario_encontrado) {
         $_SESSION["usuario"] = $usuario_encontrado;

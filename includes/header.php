@@ -20,7 +20,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <?php if (isset($_SESSION["usuario"])): ?>
                 <!-- Si el usuario está logueado -->
                 <a href="/mountain-connect/public/profile.php">Perfil</a> |
-                <a href="/mountain-connect/public/routes/create.php">Nueva ruta</a> |
+                <a href="/mountain-connect/public/routes/create.php">Crear ruta</a> |
                 <a href="/mountain-connect/public/routes/list.php">Ver rutas</a> |
                 <a href="/mountain-connect/public/logout.php">Cerrar sesión</a>
                 <span id="nombre-header">👤 Hola, <?php echo htmlspecialchars($_SESSION["usuario"]["username"]); ?>!</span>

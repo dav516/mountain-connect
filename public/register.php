@@ -29,12 +29,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($u["email"] === $email) $errors[] = "El email ya está registrado.";
     }
 
+    // --- SUBIR FOTO DE PERFIL (opcional) ---
+    $foto_perfil = "";
+
+    if (!empty($_FILES["foto"]["name"])) {
+
+        $permitidos = ["image/jpeg", "image/png", "image/jpg"];
+        $tipo = $_FILES["foto"]["type"];
+        $tamano = $_FILES["foto"]["size"];
+        $nombre_archivo = basename($_FILES["foto"]["name"]);
+
+        if (!in_array($tipo, $permitidos)) {
+            $errors[] = "La foto debe ser JPG o PNG.";
+        } elseif ($tamano > 3 * 1024 * 1024) {
+            $errors[] = "La foto no puede superar los 3MB.";
+        } else {
+            $nombre_unico = time() . "_" . $nombre_archivo;
+            $ruta_destino = "../uploads/profile/" . $nombre_unico;
+
+            if (move_uploaded_file($_FILES["foto"]["tmp_name"], $ruta_destino)) {
+                $foto_perfil = $ruta_destino;
+            } else {
+                $errors[] = "Error al subir la foto de perfil.";
+            }
+        }
+    }
+
     // Si todo está correcto, guardamos
     if (empty($errors)) {
         $nuevo_usuario = [
             "username" => $username,
             "email" => $email,
-            "password" => $password // ⚠️ En proyectos reales deberías usar password_hash()
+            "password" => password_hash($password, PASSWORD_DEFAULT),
+            "foto" => $foto_perfil
         ];
 
         $usuarios[] = $nuevo_usuario;
@@ -62,6 +89,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php endif; ?>
 
 <form method="post" id="form-registro">
+    <label>Foto de perfil (opcional):</label><br>
+    <input type="file" name="foto"><br><br>
+
     <label>Nombre de usuario:</label><br>
     <input type="text" name="username" value="<?php echo $_POST['username'] ?? ''; ?>"><br><br>
 

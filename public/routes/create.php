@@ -64,7 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "descripcion" => $descripcion,
             "nivel_tecnico" => $nivel_tecnico,
             "nivel_fisico" => $nivel_fisico,
-            "fotos" => $fotos_subidas
+            "fotos" => $fotos_subidas,
+            "creador" => $_SESSION["usuario"]["username"] 
         ];
 
         // Añadimos la nueva ruta al listado y guardamos
@@ -100,10 +101,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label>Dificultad:</label><br>
         <select name="dificultad">
             <option value="">-- Selecciona --</option>
-            <option value="fácil">Fácil</option>
-            <option value="moderada">Moderada</option>
-            <option value="difícil">Difícil</option>
-            <option value="muy difícil">Muy difícil</option>
+            <option value="Fácil">Fácil</option>
+            <option value="Moderada">Moderada</option>
+            <option value="Difícil">Difícil</option>
+            <option value="Muy difícil">Muy difícil</option>
         </select><br><br>
 
         <label>Distancia (km):</label><br>

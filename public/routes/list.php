@@ -27,6 +27,8 @@ $rutas = cargarRutas();
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
+            
+            <p><strong>Autor:</strong> <?php echo htmlspecialchars($ruta["creador"]); ?></p>
         </div>
     <?php endforeach; ?>
 <?php endif; ?>

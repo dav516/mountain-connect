@@ -2,16 +2,13 @@
     {
         "username": "juan",
         "email": "juan@mail.com",
-        "password": "123456"
+        "password": "$2y$10$v836pWKHzG.jvHy974Rk9OCY\/ZX\/lAPO\/\/i3KENoGxxPb7CrGB\/e2",
+        "foto": "..\/uploads\/profile\/1763306919_img perfil roja.jpeg"
     },
     {
-        "username": "maria",
-        "email": "maria@mail.com",
-        "password": "123456"
-    },
-    {
-        "username": "alumno",
-        "email": "alum@mail.com",
-        "password": "Welcome_1"
+        "username": "David",
+        "email": "david@mail.com",
+        "password": "$2y$10$BUcKpYSq4DNbdDiaeweR5.LaHveykP9WeiplRkSHhkNhLua6ZoU0G",
+        "foto": ""
     }
 ]

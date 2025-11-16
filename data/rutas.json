@@ -1,36 +1,38 @@
 [
     {
         "nombre": "Alpes",
-        "dificultad": "f\u00e1cil",
+        "dificultad": "Moderada",
         "distancia": "10",
         "desnivel": "500",
         "duracion": "2",
-        "provincia": "Madrid",
+        "provincia": "Barcelona",
         "epocas": [
             "verano"
         ],
-        "descripcion": "aaa",
+        "descripcion": "Muy bonita",
         "nivel_tecnico": "1",
-        "nivel_fisico": "2",
+        "nivel_fisico": "1",
         "fotos": [
-            "..\/..\/uploads\/photos\/1763047607_Captura de pantalla 2025-11-06 191259.png"
-        ]
+            "..\/..\/uploads\/photos\/1763303825_Captura de pantalla 2025-11-06 191259.png"
+        ],
+        "creador": "juan"
     },
     {
         "nombre": "Moncayo",
-        "dificultad": "moderada",
+        "dificultad": "Dif\u00edcil",
         "distancia": "15",
         "desnivel": "1000",
         "duracion": "3",
-        "provincia": "Madrid",
+        "provincia": "Valencia",
         "epocas": [
-            "oto\u00f1o"
+            "primavera"
         ],
-        "descripcion": "Ruta muy bonita",
-        "nivel_tecnico": "1",
-        "nivel_fisico": "2",
+        "descripcion": "Bastante dura pero vistas increibles",
+        "nivel_tecnico": "3",
+        "nivel_fisico": "3",
         "fotos": [
-            "..\/..\/uploads\/photos\/1763058545_MauriceITPN_Screenshot_20250315_195739.png"
-        ]
+            "..\/..\/uploads\/photos\/1763307112_MauriceITPN_Screenshot_20250315_195739.png"
+        ],
+        "creador": "David"
     }
 ]
